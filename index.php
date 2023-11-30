@@ -6,7 +6,10 @@ class Person{
     public function __construct($name,$surname){
         $this->nome=$name;
         $this->cognome=$surname;
-        self::$counter++;
+        Person::$counter++;
+    }
+    public function showCounter(){
+        echo Person::$counter."\n";
     }
 }
 $Paolo= new Person('Paolo','Rossi');
@@ -31,4 +34,4 @@ class Teacher extends Person{
     }
 }
 $minigheddu= new Teacher('Franca','Minigheddu','Storia','Indeterminata');
-var_dump($minigheddu->counter);
+$minigheddu->showCounter();

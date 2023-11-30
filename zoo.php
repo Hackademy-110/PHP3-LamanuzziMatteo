@@ -28,4 +28,4 @@ class Wolf extends Animal{
         $this->group=$group;
     }
 }
-$lucio= new Wolf('Lucio','lupo','carnivoro','Canis lupus italicus','Branco di Zolta');
+$lucio= new Wolf('Lucio','lupo','carnivoro','Canis lupus italicus','Branco del Fantabosco');
